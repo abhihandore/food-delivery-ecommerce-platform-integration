@@ -1,0 +1,30 @@
+.update__count_wrap {
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+  & button {
+    padding: 0;
+    border: 0;
+    font-size: 1.375rem;
+    background: none;
+
+    & svg {
+      display: flex;
+    }
+    &.plus {
+      font-size: 1.125rem;
+      & svg {
+        fill: var(--theme-color);
+      }
+    }
+    &.minus {
+      [data-theme="dark"] & svg {
+        fill: var(--light-color);
+      }
+    }
+  }
+  & span {
+    position: relative;
+    bottom: -1px;
+  }
+}

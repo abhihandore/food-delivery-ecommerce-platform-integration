@@ -1,0 +1,67 @@
+/* Font Face - Roboto */
+@import "./styles/variables.css";
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/Roboto-Light.ttf");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("./fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("./fonts/Roboto-Medium.ttf");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("./fonts/Roboto-Bold.ttf");
+}
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+picture {
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--themeBackgroundColor);
+  font-family: var(--font-family);
+  color: var(--primary-text-color);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.21428571;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

@@ -1,0 +1,34 @@
+:root {
+  --font-family: "Roboto", sans-serif;
+  --light-color: #fff;
+  --dark-color: #121212;
+  --themeBackgroundColor: #f3f5ff;
+
+  --primary-text-color: var(--dark-color);
+  --secondary-text-color: #7d7d7d;
+
+  --theme-color: #fb5056;
+  --theme-lighten-color: #fb50561c;
+  --primary-bg-color: var(--light-color);
+
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-xxl: 1360px;
+
+  font-size: 14px;
+
+  @media only screen and (min-width: 992px) {
+    font-size: 16px;
+  }
+}
+
+/* Dark Theme Variables */
+[data-theme="dark"] {
+  --primary-text-color: var(--light-color);
+  --secondary-text-color: #dbdbdb;
+  --themeBackgroundColor: #121212;
+
+  --primary-bg-color: var(--dark-color);
+}
