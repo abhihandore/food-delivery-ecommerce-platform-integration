@@ -18,16 +18,14 @@
   justify-content: space-between;
   margin-bottom: 1.875rem;
 }
-.head__details {
-  & h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 0.625rem;
-  }
-  & strong {
-    color: var(--secondary-text-color);
-    font-weight: 600;
-  }
+.head__details h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.625rem;
+}
+.head__details strong {
+  color: var(--secondary-text-color);
+  font-weight: 600;
 }
 .modal__close_btn {
   width: 2.8125rem;
@@ -37,64 +35,63 @@
   background: none;
   font-size: 17px;
   line-height: 1;
-  [data-theme="dark"] & {
-    color: var(--light-color);
-  }
 }
+
 .cart__items_wrap {
   max-height: 100%;
   overflow-y: auto;
-
   scrollbar-width: thin;
   scrollbar-color: #c1c1c1 #f1f1f1;
-  &::-webkit-scrollbar {
-    width: 5px;
-  }
-  &::-webkit-scrollbar-track {
-    background: #f1f1f1;
-  }
-  &::-webkit-scrollbar-thumb {
-    background-color: #c1c1c1;
-    border-radius: 20px;
-    border: 1px solid #c1c1c1;
-  }
 }
+.cart__items_wrap::-webkit-scrollbar {
+  width: 5px;
+}
+.cart__items_wrap::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.cart__items_wrap::-webkit-scrollbar-thumb {
+  background-color: #c1c1c1;
+  border-radius: 20px;
+  border: 1px solid #c1c1c1;
+}
+
 .cart__items {
   list-style: none;
   overflow-y: auto;
 }
 .cart__price_total {
   margin-top: auto;
-  & table {
-    width: 100%;
-    margin-bottom: 1rem;
-    & tbody {
-      & tr:last-child {
-        & td {
-          padding-bottom: 0.75rem;
-        }
-      }
-    }
-    & tr td {
-      padding: 6px 0;
-      color: var(--secondary-text-color);
-      &:last-child {
-        text-align: right;
-      }
-    }
-    & tfoot td {
-      border-top: 1px dashed #c1c1c1;
-      padding-top: 0.75rem;
-    }
-  }
-  & button {
-    width: 100%;
-    padding: 15px 0;
-    border: 0;
-    background-color: var(--theme-color);
-    border-radius: 10px;
-    color: var(--light-color);
-    font-size: 1rem;
-    font-weight: 600;
-  }
+}
+.cart__price_total table {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.cart__price_total table tbody tr:last-child td {
+  padding-bottom: 0.75rem;
+}
+.cart__price_total table tr td:last-child {
+  text-align: right;
+}
+.cart__price_total table td {
+  padding: 6px 0;
+  color: var(--secondary-text-color);
+}
+.cart__price_total table tfoot td {
+  border-top: 1px dashed #c1c1c1;
+  padding-top: 0.75rem;
+}
+.cart__price_total button {
+  width: 100%;
+  padding: 15px 0;
+  border: 0;
+  background-color: var(--theme-color);
+  border-radius: 10px;
+  color: var(--light-color);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Dark Theme Add-on [exceptional] */
+[data-theme="dark"] .modal__close_btn {
+  color: var(--light-color);
 }

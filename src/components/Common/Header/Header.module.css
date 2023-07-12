@@ -7,12 +7,12 @@ header {
   position: sticky;
   top: 0;
   z-index: 1;
-
-  & nav {
-    margin-left: auto;
-  }
+}
+header nav {
+  margin-left: auto;
 }
 
+/* Media Query for 768px and more.. */
 @media only screen and (min-width: 768px) {
   .header {
     min-height: 90px;

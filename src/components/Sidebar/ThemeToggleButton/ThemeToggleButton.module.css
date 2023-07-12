@@ -1,28 +1,24 @@
 .toggle__btn {
   position: relative;
-
-  &.isShrinked {
-    & .checkbox_label {
-      flex-direction: column;
-    }
-    & .light__theme_label,
-    & .dark__theme_label {
-      font-size: 0;
-      column-gap: 0;
-    }
-    & .box {
-      width: calc(100% - 12px);
-      height: 50%;
-      top: 6px;
-      transform: unset;
-    }
-    & .checkbox:checked + .checkbox_label .box {
-      left: unset;
-      transform: translate(0, 0);
-    }
-  }
 }
-
+.toggle__btn.isShrinked .checkbox_label {
+  flex-direction: column;
+}
+.toggle__btn.isShrinked .light__theme_label,
+.toggle__btn.isShrinked .dark__theme_label {
+  font-size: 0;
+  column-gap: 0;
+}
+.toggle__btn.isShrinked .box {
+  width: calc(100% - 12px);
+  height: 50%;
+  top: 6px;
+  transform: unset;
+}
+.toggle__btn.isShrinked .checkbox:checked + .checkbox_label .box {
+  left: unset;
+  transform: translate(0, 0);
+}
 .checkbox {
   opacity: 0;
   position: absolute;
@@ -54,9 +50,10 @@
   flex: 0 1 50%;
   padding: 0.875rem 0;
   column-gap: 10px;
-  & svg {
-    font-size: 1.375rem;
-  }
+}
+.dark__theme_label svg,
+.light__theme_label svg {
+  font-size: 1.375rem;
 }
 
 .box {

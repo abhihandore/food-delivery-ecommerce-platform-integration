@@ -4,65 +4,59 @@
   justify-content: flex-end;
   column-gap: 1rem;
   list-style: none;
-
-  & button {
-    background: none;
-    border: 0;
-    font-size: 1rem;
-    color: var(--secondary-text-color);
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    column-gap: 0.625rem;
-    padding: 0 10px;
-    min-height: 2.75rem;
-
-    & svg {
-      font-size: 1.25rem;
-    }
-    &.notes__btn,
-    &.share__btn {
-      display: none;
-    }
-
-    &.notes__btn {
-      background-color: var(--theme-lighten-color);
-      border: 0;
-      color: var(--theme-color);
-    }
-  }
 }
-.menu__list_item {
-  &[data-element="share"],
-  &[data-element="notes"] {
-    display: none;
-  }
+.menu__list button {
+  background: none;
+  border: 0;
+  font-size: 1rem;
+  color: var(--secondary-text-color);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  column-gap: 0.625rem;
+  padding: 0 10px;
+  min-height: 2.75rem;
 }
+.menu__list button svg {
+  font-size: 1.25rem;
+}
+.menu__list button.notes__btn,
+.menu__list button.share__btn {
+  display: none;
+} 
+.menu__list button.notes__btn {
+  background-color: var(--theme-lighten-color);
+  border: 0;
+  color: var(--theme-color);
+}
+.menu__list_item[data-element="share"],
+.menu__list_item[data-element="notes"] {
+  display: none;
+}
+
+/* Media Query for 768px and more.. */
 @media only screen and (min-width: 768px) {
   .menu__list {
     justify-content: space-between;
-
-    & button {
-      &.notes__btn,
-      &.share__btn {
-        display: flex;
-        padding-left: 0.9375rem;
-        padding-right: 0.9375rem;
-        border-radius: 5px;
-        border: 0;
-      }
-      &.share__btn {
-        border: 1px solid #e5e8ed;
-      }
-    }
   }
-  .menu__list_item {
-    &[data-element="share"],
-    &[data-element="notes"] {
-      display: block;
-    }
+  .menu__list button.notes__btn,
+  .menu__list button.share__btn {
+    display: flex;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    border-radius: 5px;
+    border: 0;
+  }
+  .menu__list button.share__btn {
+    border: 1px solid #e5e8ed;
+  }
+  .menu__list_item[data-element="share"],
+  .menu__list_item[data-element="notes"] {
+    display: block;
   }
 }
+
+/* Media Query for 992px and more.. */
 @media only screen and (min-width: 992px) {
   .menu__list {
     column-gap: 1.25rem;
