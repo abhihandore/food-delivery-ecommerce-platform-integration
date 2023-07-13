@@ -1,21 +1,35 @@
 :root {
+  /* font family */
   --font-family: "Roboto", sans-serif;
+
+  /* common palete */
   --light-color: #fff;
   --dark-color: #121212;
-  --themeBackgroundColor: #f3f5ff;
 
+  /* Theme Related Palete */
+  --theme-color: #fb5056;
+  --theme-background-color: #f3f5ff; 
+  --theme-background-color-light: var(--light-color);
+  --theme-lighten-color: #fb50561c;
+
+  /* Text Palete */
   --primary-text-color: var(--dark-color);
   --secondary-text-color: #7d7d7d;
-
-  --theme-color: #fb5056;
-  --theme-lighten-color: #fb50561c;
+  
   --primary-bg-color: var(--light-color);
 
+  /* Breakpoints */
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
   --breakpoint-xxl: 1360px;
+
+  /* font Weights */
+  --font-weight-level-1: 400;
+  --font-weight-level-2: 500;
+  --font-weight-level-3: 600;
+  --font-weight-level-4: 700;
 
   font-size: 14px;
 
@@ -26,9 +40,15 @@
 
 /* Dark Theme Variables */
 [data-theme="dark"] {
+  
+  /* Theme Related Palete */
+  --theme-background-color: #121212;
+  --theme-background-color-light: #383838;
+
+  /* Text Palete */
   --primary-text-color: var(--light-color);
   --secondary-text-color: #dbdbdb;
-  --themeBackgroundColor: #121212;
+  
 
   --primary-bg-color: var(--dark-color);
 }

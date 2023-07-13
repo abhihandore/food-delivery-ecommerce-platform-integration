@@ -1,8 +1,8 @@
+@import "../../../styles/variables.css";
+
 .menus {
   padding: 1.25rem 0;
-  border-bottom: 1px solid #e5e8ed;
 }
-
 .menus.isShrinked .nav__list_item {
   padding-left: 1.25rem;
 }
@@ -24,7 +24,7 @@
 }
 .menu__head strong {
   color: var(--secondary-text-color);
-  font-weight: 600;
+  font-weight: var(--font-weight-level-3);
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -63,7 +63,7 @@
   flex: 1;
   text-decoration: none;
   color: var(--secondary-text-color);
-  font-weight: 500;
+  font-weight: var(--font-weight-level-2);
   display: flex;
   column-gap: 1.125rem;
   align-items: center;
@@ -72,7 +72,7 @@
   font-size: 1.625rem;
 }
 .nav .link strong {
-  font-weight: 500;
+  font-weight: var(--font-weight-level-2);
   flex: 1;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -81,7 +81,7 @@
 .nav .link .tag {
   font-size: 0.8125rem;
   line-height: 1;
-  font-weight: 600;
+  font-weight: var(--font-weight-level-3);
   text-transform: uppercase;
   margin-left: auto;
   padding: 0.3125rem 0.625rem;

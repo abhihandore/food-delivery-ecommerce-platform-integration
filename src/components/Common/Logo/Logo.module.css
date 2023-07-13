@@ -47,7 +47,7 @@
 }
 .site_name_wrap span:nth-child(1) {
   font-size: 1.25rem;
-  font-weight: 500;
+  font-weight: var(--font-weight-level-2);
   margin-bottom: 7px;
 }
 .site_name_wrap span:nth-child(2) {

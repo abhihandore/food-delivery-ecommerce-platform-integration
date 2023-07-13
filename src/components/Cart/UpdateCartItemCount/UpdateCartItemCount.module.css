@@ -1,3 +1,5 @@
+@import "../../../styles/variables.css";
+
 .update__count_wrap {
   display: flex;
   align-items: center;
@@ -22,8 +24,6 @@
 .update__count_wrap .plus svg {
   fill: var(--theme-color);
 }
-
-/* Dark Theme Add-on [exceptional] */
-[data-theme="dark"] .update__count_wrap .minus svg {
-  fill: var(--light-color);
+.update__count_wrap .minus svg {
+  fill: var(--primary-text-color);
 }

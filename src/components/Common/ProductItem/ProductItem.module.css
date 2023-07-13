@@ -1,3 +1,5 @@
+@import "../../../styles/variables.css";
+
 .prod__img {
   position: relative;
   cursor: pointer;
@@ -23,14 +25,11 @@
   margin-bottom: 15px;
   border-radius: 5px;
   padding: 20px 10px 20px;
-  background-color: var(--primary-bg-color);
-}
-[data-theme="dark"] .prod__wrap  {
-  background-color: #383838;
+  background-color: var(--theme-background-color-light);
 }
 .prod__name {
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: var(--font-weight-level-3);
   display: block;
   text-align: center;
   color: var(--primary-text-color);
@@ -41,7 +40,7 @@
 .prod__price {
   font-size: 0.9375rem;
   color: var(--theme-color);
-  font-weight: 600;
+  font-weight: var(--font-weight-level-3);
   text-align: center;
   margin-top: 7px;
 }

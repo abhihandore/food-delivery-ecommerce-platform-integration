@@ -1,3 +1,5 @@
+@import "../../../styles/variables.css";
+
 .toggle__btn {
   position: relative;
 }
@@ -29,7 +31,7 @@
 }
 
 .checkbox_label {
-  background-color: var(--themeBackgroundColor);
+  background-color: var(--theme-background-color);
   width: 100%;
   border-radius: 10px;
   position: relative;
@@ -57,7 +59,7 @@
 }
 
 .box {
-  background-color: var(--primary-bg-color);
+  background-color: var(--theme-background-color-light);
   width: 50%;
   position: absolute;
   transition: transform 0.2s linear, left 0.2s linear;
@@ -67,9 +69,6 @@
   left: 6px;
   height: calc(100% - 12px);
   transform: translate(0, -50%);
-}
-[data-theme="dark"] .box {
-  background-color: #383838;
 }
 
 .checkbox:checked + .checkbox_label .box {

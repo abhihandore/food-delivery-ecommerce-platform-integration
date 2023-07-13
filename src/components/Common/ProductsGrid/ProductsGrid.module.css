@@ -1,3 +1,5 @@
+@import "../../../styles/variables.css";
+
 .prod__grid {
   display: flex;
   flex-wrap: wrap;

@@ -56,11 +56,11 @@ button {
 body {
   margin: 0;
   padding: 0;
-  background-color: var(--themeBackgroundColor);
+  background-color: var(--theme-background-color);
   font-family: var(--font-family);
   color: var(--primary-text-color);
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: var(--font-weight-level-2);
   line-height: 1.21428571;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

@@ -1,3 +1,4 @@
+@import "../../../../styles/variables.css";
 .menu__list {
   display: flex;
   align-items: center;
@@ -10,7 +11,7 @@
   border: 0;
   font-size: 1rem;
   color: var(--secondary-text-color);
-  font-weight: 600;
+  font-weight: var(--font-weight-level-3);
   display: flex;
   align-items: center;
   column-gap: 0.625rem;

@@ -23,8 +23,8 @@ const PageLayout: React.FC<Props> = ({ children }) => {
 
   /**
    *
-   * @param flag (0 or 1) This flag will check for the event which user triggered [shrink or expand]
-   *
+   * @param flag  (0 or 1) This flag will check for the event which user triggered [shrink or expand]
+   * @description on click of sidebar button to toggle, calling this function which accept the flag i.e., 1 for 'open' and 0 for 'close'
    */
   const handleDrawerEvent = (flag: number) => {
     if (Boolean(flag)) {

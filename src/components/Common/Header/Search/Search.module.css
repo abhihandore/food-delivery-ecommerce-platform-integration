@@ -1,3 +1,5 @@
+@import "../../../../styles/variables.css";
+
 .search__form {
   flex: 0 1 340px;
 }
@@ -15,7 +17,7 @@
   padding: 0 0 0 55px;
   border-radius: 10px;
   border: 0;
-  background-color: var(--themeBackgroundColor);
+  background-color: var(--theme-background-color);
   font-size: 0.875rem;
   height: 3rem;
   width: 100%;
